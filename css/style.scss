@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 1440px / 2);
+    padding-right: calc(50% - 1440px / 2); 
+}
+
+.header {
+    height: 1024px;
+    background-image: url(../images/hw1-mainImg-2077.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
