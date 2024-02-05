@@ -9,8 +9,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -18,4 +18,41 @@ body {
   background-image: url(../images/hw1-mainImg-2077.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.header__text {
+  padding-top: 217px;
+}
+.header__text-main {
+  width: 750px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.header__text-paragraf {
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 32px;
+}
+.header__text-button {
+  margin-top: 44px;
+  padding: 13px 74px 13px 74px;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
