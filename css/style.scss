@@ -13,7 +13,7 @@ body {
     padding-right: calc(50% - (1440px - 240px) / 2); 
 }
 
-.header {
+.top {
     height: 1024px;
     background-image: url(../images/hw1-mainImg-2077.jpeg);
     background-repeat: no-repeat;
@@ -45,7 +45,6 @@ body {
 
         &-button {
             margin-top: 44px;
-            padding: 13px 74px 13px 74px;
             width: 234px;
             height: 48px;
             border-radius: 30px;
@@ -56,7 +55,47 @@ body {
             font-weight: 400;
             line-height: 22px;
             letter-spacing: 0px;
-            text-align: left;
+            text-align: center;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
+    }
+}
+
+.bottom {
+    display: flex;
+    gap: 32px;
+    height: 556px;
+    background-color: rgb(0, 9, 21);
+
+    &__play {
+        padding-top: 128px;
+        height: 300px;
+        display: flex;
+        box-sizing: border-box;
+       
+        &-text {
+            position: absolute;
+            padding-left: 32px;
+            padding-top: 236px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__play img {
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%),url(0023);
     }
 }
