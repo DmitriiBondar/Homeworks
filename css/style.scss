@@ -56,8 +56,10 @@ body {
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
+            transition: all .33s;
 
             &:hover {
+                transform: scale(1.03);
                 cursor: pointer;
             }
         }
@@ -74,8 +76,13 @@ body {
         padding-top: 128px;
         height: 300px;
         display: flex;
-        box-sizing: border-box;
-       
+        transition: all .33s;
+
+        &:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+
         &-text {
             position: absolute;
             padding-left: 32px;
