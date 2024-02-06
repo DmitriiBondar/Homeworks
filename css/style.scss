@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - (1440px - 240px) / 2);
+    padding-right: calc(50% - (1440px - 240px) / 2); 
+}
+
+.top {
+    height: 1024px;
+    background-image: url(../images/hw1-mainImg-2077.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__text {
+        padding-top: 217px;
+
+        &-main {
+            width: 750px;
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            width: 500px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 32px;
+        }
+
+        &-button {
+            margin-top: 44px;
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+
+            &:hover {
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.bottom {
+    display: flex;
+    column-gap: 32px;
+    height: 556px - 6px;
+    background-color: rgb(0, 9, 21);
+
+    &__play {
+        margin-top: 128px;
+        margin-bottom: 128px;
+        height: 300px + 6px;
+        display: flex;
+        
+        &-linkBox {
+            position: relative;
+            transition: all .33s;
+            border: 3px solid transparent;
+            border-radius: 16px;
+
+            &:hover {
+                border: 3px solid rgb(68, 210, 255);
+                border-radius: 16px;
+                transform: scale(1.03);
+            }
+
+            & img {
+                border-radius: 16px;
+            }
+        }
+
+        &-text {
+            position: absolute;
+            left: 32px;
+            bottom: 32px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0px;
+        }
+    }
+}
