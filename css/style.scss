@@ -67,18 +67,15 @@ body {
     }
 }
 
-.bottom {
+.cards {
     display: flex;
     gap: 32px;
     height: 556px - 6px;
     background-color: rgb(0, 9, 21);
-    // flex-wrap: wrap;
     padding-top: 128px;
     padding-bottom: 128px;
 
     &__play {
-        // margin-top: 128px;
-        // margin-bottom: 128px;
         height: 300px + 6px;
         display: flex;
         
@@ -108,6 +105,72 @@ body {
             font-weight: 600;
             line-height: 32px;
             letter-spacing: 0px;
+        }
+    }
+}
+
+.seasons {
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 135px;
+
+    &__text {
+        grid-column: span 1;
+        padding-top: 282px;
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        &-main {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+
+            &:hover {
+                transform: scale(1.03);
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__imgBlock {
+        grid-column: span 1;
+        padding-top: 233px;
+
+        &-img {
+            width: 485px;
+            height: 333px;
         }
     }
 }
@@ -155,7 +218,7 @@ body {
         }
     }
 
-    .bottom {
+    .cards {
         height: 1221px;
         flex-wrap: wrap;
 
