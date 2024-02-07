@@ -18,6 +18,7 @@ body {
     background-image: url(../images/hw1-mainImg-2077.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    // background-attachment: fixed;
 
     &__text {
         padding-top: 217px;
@@ -50,13 +51,13 @@ body {
             border-radius: 30px;
             background: rgb(156, 3, 50);
             color: rgb(255, 255, 255);
-            font-family: Montserrat;
             font-size: 18px;
             font-weight: 400;
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
             transition: all .33s;
+            font-family: 'Montserrat', sans-serif;
 
             &:hover {
                 transform: scale(1.03);
@@ -68,13 +69,16 @@ body {
 
 .bottom {
     display: flex;
-    column-gap: 32px;
+    gap: 32px;
     height: 556px - 6px;
     background-color: rgb(0, 9, 21);
+    // flex-wrap: wrap;
+    padding-top: 128px;
+    padding-bottom: 128px;
 
     &__play {
-        margin-top: 128px;
-        margin-bottom: 128px;
+        // margin-top: 128px;
+        // margin-bottom: 128px;
         height: 300px + 6px;
         display: flex;
         
@@ -105,5 +109,72 @@ body {
             line-height: 32px;
             letter-spacing: 0px;
         }
+    }
+}
+
+
+@media(max-width: 426px) {
+
+    .center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top {
+        height: 735px;
+        // width: 100%;
+        background-image: url(../images/mob/hw2-mainImg-2077-mob.jpeg);
+        
+        &__text {
+            padding-top: 238px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-main {
+                // width: 343px;
+                width: 100%;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                // width: 343px;
+                width: 100%;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            &-button {
+                // margin: 32px 54px 54px;
+                margin-top: 32px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .bottom {
+        height: 1221px;
+        flex-wrap: wrap;
+
+        &__play {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            &-linkBox img {
+                // width: 343px;
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 376px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
