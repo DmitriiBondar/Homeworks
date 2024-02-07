@@ -61,7 +61,7 @@ body {
 
             &:hover {
                 transform: scale(1.03);
-                cursor: pointer;
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
             }
         }
     }
@@ -159,7 +159,7 @@ body {
 
             &:hover {
                 transform: scale(1.03);
-                cursor: pointer;
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
             }
         }
     }

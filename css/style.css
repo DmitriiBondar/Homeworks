@@ -58,7 +58,7 @@ body {
 }
 .top__text-button:hover {
   transform: scale(1.03);
-  cursor: pointer;
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
 }
 
 .cards {
@@ -147,7 +147,7 @@ body {
 }
 .seasons__text-button:hover {
   transform: scale(1.03);
-  cursor: pointer;
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
 }
 .seasons__imgBlock {
   grid-column: span 1;
