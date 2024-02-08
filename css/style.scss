@@ -447,6 +447,29 @@ body {
             }
         }
     }
+
+    .riddles {
+        background-image: url(../images/mob/hw-5_main-mob.jpeg);
+
+        &__text {
+            padding-top: 51px;
+
+            &-main {
+                color: rgb(255, 255, 255);
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &-paragraf {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media(max-width: 376px) {
