@@ -216,6 +216,69 @@ body {
   cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
 }
 
+.riddles {
+  height: 800px;
+  background-image: url(../images/hw-5_main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.riddles__text {
+  display: flex;
+  padding-top: 276px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.riddles__text-main {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.riddles__text-paragraf {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.riddles__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: all 0.33s;
+  font-family: "Montserrat", sans-serif;
+}
+.riddles__text-button:hover {
+  transform: scale(1.05);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+}
+
+.footer {
+  height: 80px;
+  background: rgb(0, 9, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+}
+
 @media (max-width: 426px) {
   .center {
     padding-left: 20px;
