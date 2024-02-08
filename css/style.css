@@ -83,6 +83,7 @@ body {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
   transform: scale(1.03);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
 }
 .cards__play-linkBox img {
   border-radius: 16px;
