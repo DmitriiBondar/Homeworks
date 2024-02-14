@@ -59,6 +59,7 @@ body {
 .top__text-button:hover {
   transform: scale(1.05);
   cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
 }
 
 .cards {
@@ -149,6 +150,7 @@ body {
 .seasons__text-button:hover {
   transform: scale(1.05);
   cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
 }
 .seasons__imgBlock {
   grid-column: span 1;
@@ -215,6 +217,7 @@ body {
 .words__text-button:hover {
   transform: scale(1.05);
   cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
 }
 
 .riddles {
@@ -263,6 +266,7 @@ body {
 .riddles__text-button:hover {
   transform: scale(1.05);
   cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
 }
 
 .footer {
