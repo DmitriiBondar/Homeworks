@@ -48,47 +48,48 @@ body {
   border-radius: 30px;
   background: rgb(156, 3, 50);
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
   text-align: center;
   transition: all 0.33s;
+  font-family: "Montserrat", sans-serif;
 }
 .top__text-button:hover {
-  transform: scale(1.03);
-  cursor: pointer;
+  transform: scale(1.05);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
 }
 
-.bottom {
+.cards {
   display: flex;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  gap: 32px;
   height: 550px;
   background-color: rgb(0, 9, 21);
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
-.bottom__play {
-  margin-top: 128px;
-  margin-bottom: 128px;
+.cards__play {
   height: 306px;
   display: flex;
 }
-.bottom__play-linkBox {
+.cards__play-linkBox {
   position: relative;
   transition: all 0.33s;
   border: 3px solid transparent;
   border-radius: 16px;
 }
-.bottom__play-linkBox:hover {
+.cards__play-linkBox:hover {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
   transform: scale(1.03);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
 }
-.bottom__play-linkBox img {
+.cards__play-linkBox img {
   border-radius: 16px;
 }
-.bottom__play-text {
+.cards__play-text {
   position: absolute;
   left: 32px;
   bottom: 32px;
@@ -97,4 +98,327 @@ body {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0px;
+}
+
+.seasons {
+  height: 800px;
+  background-color: rgb(0, 9, 21);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.seasons__text {
+  grid-column: span 1;
+  padding-top: 282px;
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.seasons__text-main {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.seasons__text-paragraf {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.seasons__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: all 0.33s;
+}
+.seasons__text-button:hover {
+  transform: scale(1.05);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
+}
+.seasons__imgBlock {
+  grid-column: span 1;
+  padding-top: 233px;
+}
+.seasons__imgBlock-img {
+  width: 485px;
+  height: 333px;
+}
+
+.words {
+  height: 800px;
+  background-color: rgb(0, 9, 21);
+  display: flex;
+  flex-direction: row-reverse;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.words__imgBlock {
+  margin-top: 239px;
+  margin-bottom: 239px;
+}
+.words__imgBlock-img {
+  width: 481px;
+  height: 322px;
+}
+.words__text {
+  margin-top: 282px;
+  margin-bottom: 282px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.words__text-main {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.words__text-paragraf {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.words__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: all 0.33s;
+}
+.words__text-button:hover {
+  transform: scale(1.05);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
+}
+
+.riddles {
+  height: 800px;
+  background-image: url(../images/hw-5_main.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.riddles__text {
+  display: flex;
+  padding-top: 276px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.riddles__text-main {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.riddles__text-paragraf {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.riddles__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: all 0.33s;
+  font-family: "Montserrat", sans-serif;
+}
+.riddles__text-button:hover {
+  transform: scale(1.05);
+  cursor: url("../images/Vector-cursor.svg") 4 1, pointer;
+  background: rgb(188, 18, 69);
+}
+
+.footer {
+  height: 80px;
+  background: rgb(0, 9, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+}
+
+@media (max-width: 426px) {
+  .center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(../images/mob/hw2-mainImg-2077-mob.jpeg);
+  }
+  .top__text {
+    padding-top: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top__text-main {
+    width: 100%;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .top__text-paragraf {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__text-button {
+    margin-top: 32px;
+    box-sizing: border-box;
+  }
+  .cards {
+    height: 1221px;
+    flex-wrap: wrap;
+  }
+  .cards__play {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .cards__play-linkBox img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .seasons {
+    height: 653px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+  .seasons__text {
+    padding-top: 51px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 32px;
+    justify-content: center;
+  }
+  .seasons__text-main {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .seasons__text-paragraf {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .seasons__imgBlock {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .seasons__imgBlock-img {
+    width: 100%;
+    height: 236px;
+  }
+  .words {
+    height: 653px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+  .words__text {
+    margin-top: 51px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+  }
+  .words__text-main {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .words__text-paragraf {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .words__imgBlock {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
+  .words__imgBlock-img {
+    width: 100%;
+    height: 236px;
+  }
+  .riddles {
+    background-image: url(../images/mob/hw-5_main-mob.jpeg);
+  }
+  .riddles__text {
+    padding-top: 51px;
+  }
+  .riddles__text-main {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .riddles__text-paragraf {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

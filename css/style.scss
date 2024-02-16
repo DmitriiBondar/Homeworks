@@ -18,6 +18,7 @@ body {
     background-image: url(../images/hw1-mainImg-2077.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    // background-attachment: fixed;
 
     &__text {
         padding-top: 217px;
@@ -50,31 +51,32 @@ body {
             border-radius: 30px;
             background: rgb(156, 3, 50);
             color: rgb(255, 255, 255);
-            font-family: Montserrat;
             font-size: 18px;
             font-weight: 400;
             line-height: 22px;
             letter-spacing: 0px;
             text-align: center;
             transition: all .33s;
+            font-family: 'Montserrat', sans-serif;
 
             &:hover {
-                transform: scale(1.03);
-                cursor: pointer;
+                transform: scale(1.05);
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
+                background: rgb(188, 18, 69);
             }
         }
     }
 }
 
-.bottom {
+.cards {
     display: flex;
-    column-gap: 32px;
+    gap: 32px;
     height: 556px - 6px;
     background-color: rgb(0, 9, 21);
+    padding-top: 128px;
+    padding-bottom: 128px;
 
     &__play {
-        margin-top: 128px;
-        margin-bottom: 128px;
         height: 300px + 6px;
         display: flex;
         
@@ -88,6 +90,7 @@ body {
                 border: 3px solid rgb(68, 210, 255);
                 border-radius: 16px;
                 transform: scale(1.03);
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
             }
 
             & img {
@@ -105,5 +108,378 @@ body {
             line-height: 32px;
             letter-spacing: 0px;
         }
+    }
+}
+
+.seasons {
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 135px;
+
+    &__text {
+        grid-column: span 1;
+        padding-top: 282px;
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        &-main {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
+                background: rgb(188, 18, 69);
+            }
+        }
+    }
+
+    &__imgBlock {
+        grid-column: span 1;
+        padding-top: 233px;
+
+        &-img {
+            width: 485px;
+            height: 333px;
+        }
+    }
+}
+
+.words {
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 135px;
+
+    &__imgBlock {
+        margin-top: 239px;
+        margin-bottom: 239px;
+
+        &-img {
+            width: 481px;
+            height: 322px;
+        }
+    }
+
+    &__text {
+        margin-top: 282px;
+        margin-bottom: 282px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+
+        &-main {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
+                background: rgb(188, 18, 69);
+            }
+        }
+    }
+}
+
+.riddles {
+    height: 800px;
+    background-image: url(../images/hw-5_main.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__text {
+        display: flex;
+        padding-top: 276px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        &-main {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+            font-family: 'Montserrat', sans-serif;
+
+            &:hover {
+                transform: scale(1.05);
+                cursor: url('../images/Vector-cursor.svg') 4 1, pointer;
+                background: rgb(188, 18, 69);
+            }
+        }
+    }
+}
+
+.footer {
+    height: 80px;
+    background: rgb(0, 9, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0px;
+    }
+}
+
+
+@media(max-width: 426px) {
+
+    .center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top {
+        height: 735px;
+        // width: 100%;
+        background-image: url(../images/mob/hw2-mainImg-2077-mob.jpeg);
+        
+        &__text {
+            padding-top: 238px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-main {
+                // width: 343px;
+                width: 100%;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                // width: 343px;
+                width: 100%;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            &-button {
+                margin-top: 32px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .cards {
+        height: 1221px;
+        flex-wrap: wrap;
+
+        &__play {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            &-linkBox img {
+                // width: 343px;
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .seasons {
+        height: 653px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+
+        &__text {
+            padding-top: 51px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            row-gap: 32px;
+            justify-content: center;
+
+            &-main {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+
+        &__imgBlock {
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 85px;
+
+            &-img {
+                width: 100%;
+                height: 236px;
+            }
+        }
+    }
+
+    .words {
+        height: 653px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+
+        &__text {
+            margin-top: 51px;
+            margin-bottom: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction:column;
+            row-gap: 32px;
+            align-items: center;
+
+            &-main {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+
+        &__imgBlock {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 90px;
+
+            &-img {
+                width: 100%;
+                height: 236px;
+            }
+        }
+    }
+
+    .riddles {
+        background-image: url(../images/mob/hw-5_main-mob.jpeg);
+
+        &__text {
+            padding-top: 51px;
+
+            &-main {
+                color: rgb(255, 255, 255);
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &-paragraf {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 376px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
