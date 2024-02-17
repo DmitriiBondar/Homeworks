@@ -2,8 +2,7 @@
 
 // let password = 'Пароль';
 // let userPass = prompt('Введите пароль');
-// let isCorrect = (userPass === password) ? 'Пароль верный' : 'Пароль неверный';
-// alert(isCorrect);
+// (userPass === password) ? alert('Пароль верный') : alert('Пароль неверный');
 
 
 // _____Problem_2_____
@@ -17,8 +16,7 @@
 
 // let d = prompt('Введите число');
 // let e = prompt('Введите число');
-// let isMore = (d > 100 || e > 100) ? 'Верно' : 'Неверно';
-// console.log(isMore);
+// (d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
 
 // _____Problem_4_____
 
@@ -72,8 +70,7 @@
 // _____***Problem_8***_____
 
 // let isAndroid = confirm('Вы пользуетесь Android?');
-// let Android = (isAndroid === true) ? 'Установите версию приложения для Android по ссылке' : 'Установите версию приложения для iOS по ссылке';
-// alert(Android);
+// (isAndroid === true) ? alert('Установите версию приложения для Android по ссылке') : alert('Установите версию приложения для iOS по ссылке');
 
 
 // _____***Problem_9***_____
