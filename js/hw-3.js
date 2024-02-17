@@ -7,15 +7,15 @@ userPass === password ? alert('Пароль верный') : alert('Пароль
 
 // _____Problem_2_____
 
-let c = prompt('Введите число');
+let c = prompt('Введите число от 0 до 10');
 let isOK = (c > 0 && c < 10) ? 'Верно' : 'Неверно';
 console.log(isOK);
 
 
 // _____Problem_3_____
 
-let d = prompt('Введите число');
-let e = prompt('Введите число');
+let d = prompt('Введите 1е число');
+let e = prompt('Введите 2е число');
 d > 100 || e > 100 ? console.log('Верно') : console.log('Неверно');
 
 // _____Problem_4_____
