@@ -2,7 +2,7 @@
 
 let password = 'Пароль';
 let userPass = prompt('Введите пароль');
-(userPass === password) ? alert('Пароль верный') : alert('Пароль неверный');
+userPass === password ? alert('Пароль верный') : alert('Пароль неверный');
 
 
 // _____Problem_2_____
@@ -16,7 +16,7 @@ console.log(isOK);
 
 let d = prompt('Введите число');
 let e = prompt('Введите число');
-(d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
+d > 100 || e > 100 ? console.log('Верно') : console.log('Неверно');
 
 // _____Problem_4_____
 
@@ -70,7 +70,7 @@ if(isNaN(num)) {
 // _____***Problem_8***_____
 
 let isAndroid = confirm('Вы пользуетесь Android?');
-(isAndroid === true) ? alert('Установите версию приложения для Android по ссылке') : alert('Установите версию приложения для iOS по ссылке');
+isAndroid === true ? alert('Установите версию приложения для Android по ссылке') : alert('Установите версию приложения для iOS по ссылке');
 
 
 // _____***Problem_9***_____
