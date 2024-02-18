@@ -2,7 +2,11 @@
 
 let password = 'Пароль';
 let userPass = prompt('Введите пароль');
-userPass === password ? alert('Пароль верный') : alert('Пароль неверный');
+if (userPass === password) {
+    alert('Пароль верный');
+} else {
+    alert('Пароль неверный');
+}
 
 
 // _____Problem_2_____
@@ -16,7 +20,11 @@ console.log(isOK);
 
 let d = prompt('Введите 1е число');
 let e = prompt('Введите 2е число');
-d > 100 || e > 100 ? console.log('Верно') : console.log('Неверно');
+if(d > 100 || e > 100) {
+    console.log('Верно');
+}  else {
+    console.log('Неверно');
+}
 
 // _____Problem_4_____
 
