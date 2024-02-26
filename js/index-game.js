@@ -5,7 +5,7 @@ function button() {
     el.style.background = '#008282';
     el.style.color = 'pink';
 
-    alert('hello world!');
+    // alert('hello world!');
 }
 
 
@@ -49,31 +49,32 @@ function wordButton() {
     el.style.background = '#008282';
     el.style.color = 'pink';
 
-    alert('hello words!');
+    // alert('hello words!');
 }
 
-document.getElementById('riddleButton').addEventListener("click", wordButton);
-function wordButton() {
+document.getElementById('riddleButton').addEventListener("click", riddleButton);
+function riddleButton() {
     let el = document.getElementById('riddleButton');
     // el.innerHTML = "Let's go!";
     el.style.background = '#008282';
     el.style.color = 'pink';
 
-    alert('hello riddles!');
+    // alert('hello riddles!'); //Остальной код
 }
 
 
+
+
+
 // ----------------------------------------
-    // function buttonFunc() {
-    //     alert('hello');
+    // function buttonFunc() {  //Шаг 2 - вызов этой функции при клике
+    //     alert('hello'); //Остальной код
     // }
 
-    // let buttons = document.getElementsByClassName('allWords');
+    // let buttons = document.getElementsByClassName('allWords');  //Шаг 1
 
     // for (let i = 0; i < buttons.length; i++) {
     //     buttons[i].addEventListener('click', buttonFunc);
-    //     // buttons[i].style.background = '#008282';
-    //     // buttons[i].style.color = 'pink';
     // }
 // --------------------------------------------
 
