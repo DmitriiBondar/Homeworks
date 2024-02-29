@@ -54,14 +54,25 @@
 
 // _______Problem_6_______
 
-let arr6 = [9, 8, 7, 'a', 6, 5];
+// let arr6 = [9, 8, 7, 'a', 6, 5];
 
-arr6.sort().pop();
+// arr6.sort().pop();
 
-console.log(arr6);
+// console.log(arr6);
 
 
 // _______Problem_7_______
+
+arr7 = [9, 8, 7, 6, 5];
+
+let userNum = Number(prompt('Угадай число, которое я загадал'));
+
+if (arr7.includes(userNum)) {
+    alert("УГАДАЛ!!!");
+} else {
+    alert("Не угадал! :-((");
+}
+
 
 // _______Problem_8_______
 
