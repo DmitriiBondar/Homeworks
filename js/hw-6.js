@@ -85,24 +85,45 @@
 
 // _______Problem_9_______
 
-const arr9 = [
-    [1, 2, 3], 
-    [4, 5, 6]
-];
+// const arr9 = [
+//     [1, 2, 3], 
+//     [4, 5, 6]
+// ];
 
-let newArr9 = [];
-let k = 0;
-for(let i = 0; i < arr9.length; i++) {
-    for(let j = 0; j < arr9[i].length; j++) {
-        newArr9[k] = arr9[i][j];
-        k++
-    }
-}
+// let newArr9 = [];
+// let k = 0;
+// for(let i = 0; i < arr9.length; i++) {
+//     for(let j = 0; j < arr9[i].length; j++) {
+//         newArr9[k] = arr9[i][j];
+//         k++
+//     }
+// }
    
-console.log(newArr9);
+// console.log(newArr9);
 
 
 // _______Problem_10_______
+
+const arr10 = [];
+let sum = [];
+let k = 0;
+
+for (var i = 0; i < 15; i++) {
+    arr10.push(Math.floor(Math.random()*11));
+  }
+
+  console.log(`Сгенерированный массив: ${arr10}`);
+
+  for (let i = 0; i < arr10.length; i++) {
+    if (i < arr10.length - 1) {
+        sum[k] = arr10[i] + arr10[i + 1];
+        console.log(`Сумма элементов ${i} и ${i+1} равна ${sum[k]}`);
+        k++;
+    } else {
+        console.log(`Последний элемент равен ${arr10[i]}`);
+    }
+  }
+
 
 // _______Problem_11_______
 
