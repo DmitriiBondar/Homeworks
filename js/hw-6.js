@@ -1,6 +1,6 @@
 // _______Problem_1_______
 
-// let arr1 = [1, 5, 4, 10, 0, 3];
+// const arr1 = [1, 5, 4, 10, 0, 3];
 
 // for (let i = 0; i < arr1.length; i++) {
 //     console.log(arr1[i]);
@@ -12,16 +12,22 @@
 
 // _______Problem_2_______
 
-let arr2 = [1, 5, 4, 10, 0, 3];
+// const arr2 = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < arr2.length; i++) {
-    if(arr2[i] === 4) {
-        console.log(i);
-    }
-}
+// for (let i = 0; i < arr2.length; i++) {
+//     if(arr2[i] === 4) {
+//         console.log(i);
+//     }
+// }
 
 
 // _______Problem_3_______
+
+const arr3 = [1, 3, 5, 10, 20];
+
+const joinArr3 = arr3.join(' ');
+console.log(joinArr3);
+
 
 // _______Problem_4_______
 
