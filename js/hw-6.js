@@ -63,18 +63,25 @@
 
 // _______Problem_7_______
 
-arr7 = [9, 8, 7, 6, 5];
+// arr7 = [9, 8, 7, 6, 5];
 
-let userNum = Number(prompt('Угадай число, которое я загадал'));
+// let userNum = Number(prompt('Угадай число, которое я загадал'));
 
-if (arr7.includes(userNum)) {
-    alert("УГАДАЛ!!!");
-} else {
-    alert("Не угадал! :-((");
-}
+// if (arr7.includes(userNum)) {
+//     alert("УГАДАЛ!!!");
+// } else {
+//     alert("Не угадал! :-((");
+// }
 
 
 // _______Problem_8_______
+
+let str = 'abcdef';
+
+str = str.split('').reverse().join('');
+
+console.log(str);
+
 
 // _______Problem_9_______
 
