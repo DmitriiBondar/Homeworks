@@ -104,28 +104,46 @@
 
 // _______Problem_10_______
 
-const arr10 = [];
-let sum = [];
-let k = 0;
+// const arr10 = [];
+// let sum = [];
+// let k = 0;
 
-for (var i = 0; i < 15; i++) {
-    arr10.push(Math.floor(Math.random()*11));
-  }
+// for (var i = 0; i < 15; i++) {
+//     arr10.push(Math.floor(Math.random()*11));
+//   }
 
-  console.log(`Сгенерированный массив: ${arr10}`);
+//   console.log(`Сгенерированный массив: ${arr10}`);
 
-  for (let i = 0; i < arr10.length; i++) {
-    if (i < arr10.length - 1) {
-        sum[k] = arr10[i] + arr10[i + 1];
-        console.log(`Сумма элементов ${i} и ${i+1} равна ${sum[k]}`);
-        k++;
-    } else {
-        console.log(`Последний элемент равен ${arr10[i]}`);
-    }
-  }
+//   for (let i = 0; i < arr10.length; i++) {
+//     if (i < arr10.length - 1) {
+//         sum[k] = arr10[i] + arr10[i + 1];
+//         console.log(`Сумма элементов ${i} и ${i+1} равна ${sum[k]}`);
+//         k++;
+//     } else {
+//         console.log(`Последний элемент равен ${arr10[i]}`);
+//     }
+//   }
 
 
 // _______Problem_11_______
+
+let arr11 = [];
+
+let squaring = function() {
+
+    for(var i = 0; i < 10; i++) {
+        arr11.push(Math.floor(Math.random()*16));
+    }
+
+    console.log(`Сгенерированный массив: ${arr11}`);
+
+    const newArr11 = arr11.map(per => per ** 2);
+    
+    return newArr11;
+}
+
+console.log(`Полученный массив: ${squaring()}`);
+
 
 // _______Problem_12_______
 
