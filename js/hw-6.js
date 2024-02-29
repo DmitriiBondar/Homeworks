@@ -44,15 +44,22 @@
 
 // _______Problem_5_______
 
-const arr5 = [1, 1, 1];
+// const arr5 = [1, 1, 1];
 
-for (let i = 0; i < 3; i++) {
-    arr5.push(2);
-}
-console.log(arr5);
+// for (let i = 0; i < 3; i++) {
+//     arr5.push(2);
+// }
+// console.log(arr5);
 
 
 // _______Problem_6_______
+
+let arr6 = [9, 8, 7, 'a', 6, 5];
+
+arr6.sort().pop();
+
+console.log(arr6);
+
 
 // _______Problem_7_______
 
