@@ -31,18 +31,26 @@
 
 // _______Problem_4_______
 
-const arr4 = [];
+// const arr4 = [];
 
-for(let i = 0; i < 3; i++) {
-    arr4[i] = [];
-    for (let j = 0; j < 3; j++) {
-        arr4[i][j] = 1;
-    }
-}
-console.log(arr4);
+// for(let i = 0; i < 3; i++) {
+//     arr4[i] = [];
+//     for (let j = 0; j < 3; j++) {
+//         arr4[i][j] = 1;
+//     }
+// }
+// console.log(arr4);
 
 
 // _______Problem_5_______
+
+const arr5 = [1, 1, 1];
+
+for (let i = 0; i < 3; i++) {
+    arr5.push(2);
+}
+console.log(arr5);
+
 
 // _______Problem_6_______
 
