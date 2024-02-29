@@ -76,14 +76,31 @@
 
 // _______Problem_8_______
 
-let str = 'abcdef';
+// let str = 'abcdef';
 
-str = str.split('').reverse().join('');
+// str = str.split('').reverse().join('');
 
-console.log(str);
+// console.log(str);
 
 
 // _______Problem_9_______
+
+const arr9 = [
+    [1, 2, 3], 
+    [4, 5, 6]
+];
+
+let newArr9 = [];
+let k = 0;
+for(let i = 0; i < arr9.length; i++) {
+    for(let j = 0; j < arr9[i].length; j++) {
+        newArr9[k] = arr9[i][j];
+        k++
+    }
+}
+   
+console.log(newArr9);
+
 
 // _______Problem_10_______
 
