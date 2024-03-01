@@ -176,25 +176,39 @@
 
 // _______Problem_14_______
 
-const arr14 = [];
-const newArr14 = [];
-let k = 0;
+// const arr14 = [];
+// const newArr14 = [];
+// let k = 0;
 
-    for(var i = 0; i < 10; i++) {
-        arr14.push(Math.floor(Math.random()*11));
-    }
+//     for(var i = 0; i < 10; i++) {
+//         arr14.push(Math.floor(Math.random()*11));
+//     }
 
-    console.log(`Исходный массив: ${arr14}`);
+//     console.log(`Исходный массив: ${arr14}`);
 
-    for (let i = 0; i < arr14.length; i++) {
-        if (arr14[i] % 2 !== 0) {
-            continue;
-        } else {
-            newArr14[k] = arr14[i];
-            k++;
-        }
-    }
+//     for (let i = 0; i < arr14.length; i++) {
+//         if (arr14[i] % 2 !== 0) {
+//             continue;
+//         } else {
+//             newArr14[k] = arr14[i];
+//             k++;
+//         }
+//     }
 
-    console.log(`Новый массив: ${newArr14}`);
+//     console.log(`Новый массив: ${newArr14}`);
 
 // _______Problem_15_______
+
+
+const arr15 = []
+
+for(var i = 0; i < 6; i++) {
+    arr15.push(Math.floor(Math.random()*11));
+}
+
+console.log(`Сгенерированный массив: ${arr15}`);
+
+const sum = arr15.reduce((total, number) => total + number, 0);
+let midNum = sum / arr15.length;
+
+console.log(`Среднее арифметическое: ${midNum}`);
