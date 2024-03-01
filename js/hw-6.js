@@ -163,17 +163,38 @@
 
 // _______Problem_13_______
 
-const arr13 = [3, 5, -1, -45, 47, -2, -87, 100, -777];
-let newArr13;
+// const arr13 = [3, 5, -1, -45, 47, -2, -87, 100, -777];
+// let newArr13;
 
-const arr13func = function() {
-    newArr13 = arr13.filter(num => num < 0);
-    return newArr13;
-}
-arr13func();
-console.log(newArr13);
+// const arr13func = function() {
+//     newArr13 = arr13.filter(num => num < 0);
+//     return newArr13;
+// }
+// arr13func();
+// console.log(newArr13);
 
 
 // _______Problem_14_______
+
+const arr14 = [];
+const newArr14 = [];
+let k = 0;
+
+    for(var i = 0; i < 10; i++) {
+        arr14.push(Math.floor(Math.random()*11));
+    }
+
+    console.log(`Исходный массив: ${arr14}`);
+
+    for (let i = 0; i < arr14.length; i++) {
+        if (arr14[i] % 2 !== 0) {
+            continue;
+        } else {
+            newArr14[k] = arr14[i];
+            k++;
+        }
+    }
+
+    console.log(`Новый массив: ${newArr14}`);
 
 // _______Problem_15_______
