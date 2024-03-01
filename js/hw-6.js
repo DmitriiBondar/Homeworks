@@ -147,21 +147,32 @@
 
 // _______Problem_12_______
 
-const arr12 = ['qwerty', 'zawsxcderfv', 'qwdfghjm', 'bnjuyt', 'qnhpzvjiuytfdfghbt'];
-const arrNum12 = [];
+// const arr12 = ['qwerty', 'zawsxcderfv', 'qwdfghjm', 'bnjuyt', 'qnhpzvjiuytfdfghbt'];
+// const arrNum12 = [];
 
-let strNum = function() {
-    for (let i = 0; i < arr12.length; i++) {
-        arr12[i] = arr12[i].split('');
-        arrNum12[i] = arr12[i].length;
-    }
-    return arrNum12;
-}
-strNum();
-console.log(arrNum12);
+// let strNum = function() {
+//     for (let i = 0; i < arr12.length; i++) {
+//         arr12[i] = arr12[i].split('');
+//         arrNum12[i] = arr12[i].length;
+//     }
+//     return arrNum12;
+// }
+// strNum();
+// console.log(arrNum12);
 
 
 // _______Problem_13_______
+
+const arr13 = [3, 5, -1, -45, 47, -2, -87, 100, -777];
+let newArr13;
+
+const arr13func = function() {
+    newArr13 = arr13.filter(num => num < 0);
+    return newArr13;
+}
+arr13func();
+console.log(newArr13);
+
 
 // _______Problem_14_______
 
