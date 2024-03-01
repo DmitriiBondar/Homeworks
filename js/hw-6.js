@@ -116,7 +116,7 @@ for (var i = 0; i < 15; i++) {
 
   for (let i = 0; i < arr10.length; i++) {
     if (i < arr10.length - 1) {
-        sum[l] = arr10[i] + arr10[i + 1];
+        summ[l] = arr10[i] + arr10[i + 1];
         console.log(`Сумма элементов ${i} и ${i+1} равна ${summ[l]}`);
         l++;
     } else {
