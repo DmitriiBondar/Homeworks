@@ -94,7 +94,7 @@ let newArr9 = [];
 let q = 0;
 for(let i = 0; i < arr9.length; i++) {
     for(let j = 0; j < arr9[i].length; j++) {
-        newArr9[k] = arr9[i][j];
+        newArr9[q] = arr9[i][j];
         q++
     }
 }
