@@ -127,25 +127,39 @@
 
 // _______Problem_11_______
 
-let arr11 = [];
+// let arr11 = [];
 
-let squaring = function() {
+// let squaring = function() {
 
-    for(var i = 0; i < 10; i++) {
-        arr11.push(Math.floor(Math.random()*16));
-    }
+//     for(var i = 0; i < 10; i++) {
+//         arr11.push(Math.floor(Math.random()*16));
+//     }
 
-    console.log(`Сгенерированный массив: ${arr11}`);
+//     console.log(`Сгенерированный массив: ${arr11}`);
 
-    const newArr11 = arr11.map(per => per ** 2);
-    
-    return newArr11;
-}
+//     const newArr11 = arr11.map(per => per ** 2);
 
-console.log(`Полученный массив: ${squaring()}`);
+//     return newArr11;
+// }
+
+// console.log(`Полученный массив: ${squaring()}`);
 
 
 // _______Problem_12_______
+
+const arr12 = ['qwerty', 'zawsxcderfv', 'qwdfghjm', 'bnjuyt', 'qnhpzvjiuytfdfghbt'];
+const arrNum12 = [];
+
+let strNum = function() {
+    for (let i = 0; i < arr12.length; i++) {
+        arr12[i] = arr12[i].split('');
+        arrNum12[i] = arr12[i].length;
+    }
+    return arrNum12;
+}
+strNum();
+console.log(arrNum12);
+
 
 // _______Problem_13_______
 
