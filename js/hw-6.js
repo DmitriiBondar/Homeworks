@@ -44,11 +44,19 @@ console.log(arr4);
 
 // _______Problem_5_______
 
-const arr5 = [1, 1, 1];
+// Вариант 1
 
-for (let i = 0; i < 3; i++) {
-    arr5.push(2);
-}
+// const arr5 = [1, 1, 1];
+
+// for (let i = 0; i < 3; i++) {
+//     arr5.push(2);
+// }
+// console.log(arr5);
+
+// Вариант 2
+
+const arr5 = [1, 1, 1];
+arr5.push(2, 2, 2);
 console.log(arr5);
 
 
@@ -85,19 +93,26 @@ console.log(str);
 
 // _______Problem_9_______
 
+
 const arr9 = [
     [1, 2, 3], 
     [4, 5, 6]
 ];
 
-let newArr9 = [];
-let q = 0;
-for(let i = 0; i < arr9.length; i++) {
-    for(let j = 0; j < arr9[i].length; j++) {
-        newArr9[q] = arr9[i][j];
-        q++
-    }
-}
+// Вариант 1
+
+// let newArr9 = [];
+// let q = 0;
+// for(let i = 0; i < arr9.length; i++) {
+//     for(let j = 0; j < arr9[i].length; j++) {
+//         newArr9[q] = arr9[i][j];
+//         q++
+//     }
+// }
+
+// Вариант 2
+
+const newArr9 = arr9.flat();
    
 console.log(newArr9);
 
@@ -127,51 +142,48 @@ for (var i = 0; i < 15; i++) {
 
 // _______Problem_11_______
 
-let arr11 = [];
+const arr11 = [];
 
-let squaring = function() {
+for(var i = 0; i < 10; i++) {
+    arr11.push(Math.floor(Math.random()*16));
+}
 
-    for(var i = 0; i < 10; i++) {
-        arr11.push(Math.floor(Math.random()*16));
-    }
+console.log(`Сгенерированный массив: ${arr11}`);
 
-    console.log(`Сгенерированный массив: ${arr11}`);
+let getSquaredNumbers = function(array) {
 
-    const newArr11 = arr11.map(per => per ** 2);
+    const newArr11 = array.map(per => per ** 2);
 
     return newArr11;
 }
 
-console.log(`Полученный массив: ${squaring()}`);
+console.log(`Полученный массив: ${getSquaredNumbers(arr11)}`);
 
 
 // _______Problem_12_______
 
 const arr12 = ['qwerty', 'zawsxcderfv', 'qwdfghjm', 'bnjuyt', 'qnhpzvjiuytfdfghbt'];
-const arrNum12 = [];
 
-let strNum = function() {
-    for (let i = 0; i < arr12.length; i++) {
-        arr12[i] = arr12[i].split('');
-        arrNum12[i] = arr12[i].length;
+let stringToNumber = function(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i].length;
     }
-    return arrNum12;
+    return arr;
 }
-strNum();
-console.log(arrNum12);
+
+console.log(stringToNumber(arr12));
 
 
 // _______Problem_13_______
 
 const arr13 = [3, 5, -1, -45, 47, -2, -87, 100, -777];
-let newArr13;
 
-const arr13func = function() {
-    newArr13 = arr13.filter(num => num < 0);
-    return newArr13;
+let negativeNumbers = function(arrNum) {
+    negativeArr13 = arrNum.filter(num => num < 0);
+    return negativeArr13;
 }
-arr13func();
-console.log(newArr13);
+
+console.log(negativeNumbers(arr13));
 
 
 // _______Problem_14_______
