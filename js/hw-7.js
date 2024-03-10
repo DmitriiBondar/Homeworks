@@ -43,7 +43,14 @@ console.log(`Минимальное число: ${Math.min(...nums)}; Макси
 
 // _______Problem_5_______
 
+const randomNum = () => console.log(Math.floor(Math.random()*10) + 1);
+randomNum();
+
+
 // _______Problem_6_______
+
+
+
 
 // _______Problem_7_______
 
