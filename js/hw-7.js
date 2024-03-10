@@ -9,13 +9,20 @@ console.log(toUpper.toUpperCase());
 
 const strArr = ['Крокодил Женя', 'Малыш улетел', 'Карлсон, который жИвет в Сочи', 'мАлыШ - депутат'];
 let str = 'МаЛыШ';
+const newStrArr = [];
 
-strArr.forEach((el) => {
+const findWordInStrings = (array, string) => {
 
-    if (el.toLowerCase().startsWith(str.toLowerCase())) {
-       console.log(el);
-    }
- });
+   array.forEach((el) => {
+
+      if (el.toLowerCase().startsWith(string.toLowerCase())) {
+         newStrArr.push(el);
+      }
+   });
+}
+
+findWordInStrings(strArr, str);
+console.log(newStrArr);
 
 
 // _______Problem_3_______
@@ -29,7 +36,9 @@ console.log(Math.round(num));
 
 // _______Problem_4_______
 
+const nums = [52, 53, 49, 77, 21, 32];
 
+console.log(`Минимальное число: ${Math.min(...nums)}; Максимальное число: ${Math.max(...nums)}`);
 
 
 // _______Problem_5_______
