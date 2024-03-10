@@ -1,6 +1,14 @@
 // _______Problem_1_______
 
+let toUpper = 'js';
+
+console.log(toUpper.toUpperCase());
+
+
 // _______Problem_2_______
+
+
+
 
 // _______Problem_3_______
 
