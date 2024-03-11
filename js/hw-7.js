@@ -78,7 +78,16 @@ getRandNum(firstNum, secondNum);
 
 // _______Problem_8_______
 
+let currDate = new Date();
+console.log(currDate);
+
+
 // _______Problem_9_______
+
+let currentDate = new Date();
+let afterNumDays = (days) => currentDate.setDate(currentDate.getDate() + days);
+
+console.log(new Date(afterNumDays(73)));
 
 
 // _______Problem_10_______
