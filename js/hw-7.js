@@ -49,7 +49,19 @@ randomNum();
 
 // _______Problem_6_______
 
+let randNum = Math.floor(Math.random() * 10) + 10;
+let madeArr = [];
 
+let makeArr = (number) => {
+
+   for (let i = 0; i < number/2; i++) {
+      madeArr[i] = Math.floor(Math.random() * number);
+   }
+
+   return madeArr;
+}
+
+console.log(makeArr(randNum));
 
 
 // _______Problem_7_______
