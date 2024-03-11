@@ -66,6 +66,16 @@ console.log(makeArr(randNum));
 
 // _______Problem_7_______
 
+let firstNum = Math.floor(Math.random() * 10);
+let secondNum = Math.floor(Math.random() * 30) + firstNum + 1;
+
+let getRandNum = (num1, num2) => console.log(Math.floor(Math.random() * (num2 - num1)) + num1);
+
+console.log(`Число ниже в диапазоне от ${firstNum} до ${secondNum}`);
+
+getRandNum(firstNum, secondNum);
+
+
 // _______Problem_8_______
 
 // _______Problem_9_______
