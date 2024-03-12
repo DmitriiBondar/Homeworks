@@ -92,4 +92,26 @@ console.log(new Date(afterNumDays(73)));
 
 // _______Problem_10_______
 
+let thisDate = new Date();
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+"Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let currrentDate = (days, months) => {
+   let fullDate = "Сегодня: " + thisDate.getDate() + 
+
+" " + months[thisDate.getMonth()] + 
+
+" " + thisDate.getFullYear() + 
+
+", " + days[thisDate.getDay()]; 
+
+console.log(fullDate);
+}
+
+currrentDate(days, months);
+
+
 // _______Problem_11_______
