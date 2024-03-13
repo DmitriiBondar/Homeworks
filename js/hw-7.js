@@ -116,4 +116,29 @@ currrentDate(days, months);
 
 // _______Problem_11_______
 
-let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+let wordsArr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+document.getElementById('wordsButton').addEventListener("click", words);
+function words() {
+    let el = document.getElementById('wordsButton');
+    // el.innerHTML = "Let's go!";
+    el.style.background = '#008282';
+    el.style.color = 'pink';
+
+   sortWordsArr = wordsArr.sort();
+   alert(`Запомни слова: ${sortWordsArr}`);
+
+   let firstWord = prompt('Какое слово было первым?');
+   if(firstWord.toLocaleLowerCase() === sortWordsArr[0].toLowerCase()) {
+      alert('Ответ верный');
+   } else {
+      alert('Ответ неверный');
+   }
+
+   let lastWord = prompt('Какое слово было последним?');
+   if(lastWord.toLocaleLowerCase() === sortWordsArr[sortWordsArr.length - 1].toLowerCase()) {
+      alert('Ответ верный');
+   } else {
+      alert('Ответ неверный');
+   }
+}
