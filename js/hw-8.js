@@ -14,9 +14,10 @@ const people = [
 
 
 
+
  // _______Problem-3_______
 
-    console.log(Date());
+const dateEveryThreeSeconds = () => {
 
     const intervalDate = setInterval(() => {
         console.log(Date());
@@ -24,7 +25,11 @@ const people = [
 
     setTimeout(() => {
         clearInterval(intervalDate);
+        console.log('30 секунд прошло');
     }, 30000);
+}
+
+dateEveryThreeSeconds();
 
 
  // _______Problem-4_______
@@ -41,3 +46,22 @@ delayForSecond(function () {
 
 
  // _______Problem-5_______
+
+ // Функция delayForSecond через 1 секунду пишет в консоль 
+// «Прошла одна секунда», а затем вызывает переданный колбэк
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond(() => sayHi('Вася'))
