@@ -1,18 +1,44 @@
 // _______Problem-1_______
 
-const people = [
+const peopleX = [
     { name: 'Глеб', age: 29 },
     { name: 'Анна', age: 17 },
     { name: 'Олег', age: 7 },
     { name: 'Оксана', age: 47 }
  ];
 
- console.log(people.sort((a, b) => parseFloat(a.age) - parseFloat(b.age)));
+ console.log(peopleX.sort((a, b) => parseFloat(a.age) - parseFloat(b.age)));
 
 
  // _______Problem-2_______
 
+ function isPositive(val) {
+        return val > 0;
+    }
+    function isMale(el) {
+    return el.gender === 'male'
+    }
+    function filter(arr, element) {
+        const filtered = [];
 
+        for(let i = 0; i < arr.length; i++) {
+            if(element(arr[i])) {
+                filtered.push(arr[i]);
+            }
+        }
+        return filtered;
+    }
+    
+    console.log(filter([3, -4, 1, 9], isPositive));
+    
+    const people = [
+       {name: 'Глеб', gender: 'male'},
+       {name: 'Анна', gender: 'female'},
+       {name: 'Олег', gender: 'male'},
+       {name: 'Оксана', gender: 'female'}
+    ];
+    
+    console.log(filter(people, isMale));
 
 
  // _______Problem-3_______
