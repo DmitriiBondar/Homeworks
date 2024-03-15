@@ -29,6 +29,15 @@ const people = [
 
  // _______Problem-4_______
 
+ function delayForSecond(callback) {
+    setTimeout(() => {
+        callback();
+    }, 1000);
+}
+
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
 
 
  // _______Problem-5_______
